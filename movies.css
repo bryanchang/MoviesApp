@@ -1,3 +1,16 @@
+body {
+	background-color: #f6f6f6;
+}
+
+strong {
+	font-weight: 1200;
+}
+
+li{
+	line-height: 45px;
+	list-style: none;
+}
+
 div{
 	border: 1px dashed black;
 }
@@ -11,15 +24,9 @@ div{
 	display: none;
 }
 
-body {
-	background-color: #f6f6f6;
-}
 
-strong {
-	font-weight: 800;
-}
 
-#home {
+#container {
 	width: 500px;
 	margin: 100px auto;
 }
@@ -66,14 +73,36 @@ a:visited{
 
 form input[type="text"] {
 	float:left;
-	margin-bottom: 0;
+	margin: 0 auto;
 	width: 400px;
 }
 
-div.list{
-	width: 500px;
-	margin: auto;
+#search_box{
+	margin-left: 10px;
 }
+
+#search_results{
+	float: left;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+}
+
+#movie_data{
+	width: 50%;
+	float: left;
+}
+
+div.list{
+	width: 45%;
+	margin: auto;
+	padding-left: 0;
+	margin-left: 0;
+	display: non;
+}
+
 
 
 .center{

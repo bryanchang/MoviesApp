@@ -12,10 +12,11 @@ function showMovieDetails(movie){
   var title = movie.Title;
   var year = movie.Year;
   var plot = movie.Plot;
-  var imdbRating = movie.imdbRating;
-  headerElement.append(title + ' ' + year + "[" + imdbRating + "]");
+  var imdbRating = $('<h4>' + movie.imdbRating + '</h4>');
+  headerElement.append(title + ' (' + year +')');
   headerElement.appendTo('#movie_data');
-  poster.insertAfter(headerElement);
+  imdbRating.insertAfter(headerElement);
+  poster.insertAfter(imdbRating);
   paragraphElement.append(plot);
   paragraphElement.insertAfter(poster);
 }
@@ -39,7 +40,7 @@ $(document).ready(function(){
           var result = $('<li data-id="' + id + '"></li>');
           var link = $('<a href="#"></a>');
           var list = $('#search_results');
-          link.append(movie, year);
+          link.append(movie + ' (' + year + ')');
           result.append(link);
           list.append(result);
         }

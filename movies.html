@@ -8,7 +8,10 @@
   <script type='text/javascript' src='movies.js'></script>
 </head>
 <body>
-  <div id="home">
+  <h6 class="error hidden">
+    Server is not working. Try again later.
+  </h6>
+  <div id="container">
     <h1 class="moovle"><a href="/"> MOOVLE</a></h1>
       <form action="/search" method="get">
         <div class="form">
@@ -16,7 +19,7 @@
             <button class="btn">Search</button>
         </div>
       </form>
-    <div>
+    <div class="list">
       <ul id='search_results'>
       </ul>
     </div>
