@@ -1,14 +1,22 @@
+div{
+	border: 1px dashed black;
+}
+
+.error{
+	color: red;
+	font-style: bold;
+}
+
+.hidden{
+	display: none;
+}
+
 body {
 	background-color: #f6f6f6;
 }
 
 strong {
 	font-weight: 800;
-}
-
-.form{
-	width: 620px;
-	background-color: rgba(0,0,0,0.7);
 }
 
 #home {
@@ -46,20 +54,18 @@ a:visited{
 }
 
 .form{
-	width: 550px;
+	width: 620px;
 	margin: auto;
 }
 
-.search_box{
-	float:left;
-}
-
 .btn{
-	float:left;
+	float: left;
+	margin-left: 10px;
 	box-shadow: 2px 5px 10px 10px #ccc;
 }
 
 form input[type="text"] {
+	float:left;
 	margin-bottom: 0;
 	width: 400px;
 }
@@ -69,9 +75,6 @@ div.list{
 	margin: auto;
 }
 
-li{
-	list-style: none;
-}
 
 .center{
 	margin: auto;
@@ -85,11 +88,3 @@ li{
 	width: 800px;
 	margin: auto;
 }
-
-footer{
-	font-family: serif;
-	font-size: 8px;
-	font-weight: 200;
-	text-align: right;
-	text-transform: uppercase
-	}

@@ -6,17 +6,22 @@
   <link href="http://fonts.googleapis.com/css?family=Bitter" rel='stylesheet' type='text/css'>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script type='text/javascript' src='movies.js'></script>
-
 </head>
 <body>
   <div id="home">
     <h1 class="moovle"><a href="/"> MOOVLE</a></h1>
       <form action="/search" method="get">
         <div class="form">
-            <input type="text" name="q" placeholder="Search for movie title" class="search_box"/>
+            <input type="text" placeholder="Search for movie title" id="search_box"/>
             <button class="btn">Search</button>
         </div>
       </form>
+    <div>
+      <ul id='search_results'>
+      </ul>
+    </div>
+    <div id="movie_data">
+    </div>
   </div>
 </body>
 </html>
